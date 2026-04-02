@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConcepTheory｜Blog</title>
+  <meta name="description" content="ConcepTheory Blog 分享網站製作、SEO、GEO、Google Maps、社交媒體與品牌曝光相關觀點。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans HK", sans-serif; background: #0a0f1d; color: #f5f7fb; }
+    .hero-bg { background: radial-gradient(circle at top left, rgba(139, 92, 246, 0.35), transparent 35%), radial-gradient(circle at top right, rgba(6, 182, 212, 0.22), transparent 30%), radial-gradient(circle at center, rgba(236, 72, 153, 0.12), transparent 35%), linear-gradient(180deg, #0a0f1d 0%, #10182e 55%, #0a0f1d 100%); }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.1); }
+    .glass-strong { background: rgba(255,255,255,0.08); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); }
+    .gradient-text { background: linear-gradient(90deg, #8b5cf6, #06b6d4, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-line { border-top: 1px solid rgba(255,255,255,0.08); }
+    .glow { box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.35); }
+    .whatsapp-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; }
+  </style>
+</head>
+<body>
+  <a href="contact.html" class="whatsapp-float px-5 py-3 rounded-full bg-green-500 text-white font-semibold shadow-lg hover:bg-green-400 transition">WhatsApp 諮詢</a>
+  <div class="w-full border-b border-white/10 bg-black/20 backdrop-blur"><div class="max-w-7xl mx-auto px-6 py-2 flex justify-end text-xs md:text-sm text-gray-300"><span class="text-cyan-300 mr-2">香港時間</span><span id="current-datetime">載入時間中...</span></div></div>
+  <header class="sticky top-0 z-50 bg-black/20 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div><a href="index.html" class="text-xl md:text-2xl font-bold tracking-wide">ConcepTheory</a><div class="text-xs text-gray-400">Where strategy meets execution</div></div>
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+        <a href="index.html" class="hover:text-white">主頁</a>
+        <a href="blog_index.html" class="text-white">Blog</a>
+        <a href="contact.html" class="hover:text-white">聯絡</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">立即諮詢</a>
+    </div>
+  </header>
+
+  <section class="hero-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-28">
+      <div class="max-w-4xl">
+        <p class="text-sm uppercase tracking-[0.3em] text-cyan-300 mb-4">Insights • Strategy • Brand Visibility</p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          ConcepTheory <span class="gradient-text">Blog</span>
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          分享網站製作、SEO、GEO、Google Maps、內容策劃、社交媒體與品牌曝光相關觀點，
+          幫你更有系統理解數碼增長。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">SEO</div>
+        <h2 class="text-2xl font-bold mt-3">點解有網站都未必有查詢？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">好多網站存在，但內容結構、訊息清晰度與轉化路徑不足，最後變成只係一個網上名片。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">GEO</div>
+        <h2 class="text-2xl font-bold mt-3">AI 搜尋時代，品牌內容要點準備？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">當搜尋逐步進入生成式答案體驗，品牌內容清晰度、可信度與結構性會變得更重要。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">Maps</div>
+        <h2 class="text-2xl font-bold mt-3">Google Maps 對本地商戶有幾重要？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">對好多地區型業務嚟講，Google Maps 往往係最接近查詢與到店前嘅重要入口。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">Social</div>
+        <h2 class="text-2xl font-bold mt-3">社交媒體點先唔會做成「有出 post 但冇累積」？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">關鍵在於內容主題支柱、品牌語氣一致與平台定位清晰，而唔只係追住更新頻率。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">Website</div>
+        <h2 class="text-2xl font-bold mt-3">網站設計應該先諗靚，定先諗轉化？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">真正有效嘅網站設計，應該將品牌形象、內容架構與查詢路徑一齊思考。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+      <article class="glass rounded-2xl p-6">
+        <div class="text-xs text-cyan-300 uppercase tracking-[0.25em]">Collaboration</div>
+        <h2 class="text-2xl font-bold mt-3">KOL 合作點樣先唔會變成一次性曝光？</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">如果合作角度同品牌故事連結得好，KOL 內容可以成為品牌長線印象建立一部分。</p>
+        <a href="#" class="inline-block mt-6 text-white hover:text-cyan-300">閱讀更多 →</a>
+      </article>
+    </div>
+  </section>
+
+  <footer class="section-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2"><h3 class="text-2xl font-bold">ConcepTheory</h3><p class="text-gray-300 mt-4 leading-relaxed max-w-xl">分享品牌曝光、網站、搜尋、本地流量與內容策略觀點。</p></div>
+      <div><div class="font-semibold mb-4">分類</div><ul class="space-y-2 text-gray-300 text-sm"><li><a href="seo.html" class="hover:text-white">SEO</a></li><li><a href="geo.html" class="hover:text-white">GEO</a></li><li><a href="google-maps.html" class="hover:text-white">Google Maps</a></li></ul></div>
+      <div><div class="font-semibold mb-4">更多</div><ul class="space-y-2 text-gray-300 text-sm"><li><a href="social-media.html" class="hover:text-white">社交媒體</a></li><li><a href="contact.html" class="hover:text-white">聯絡我哋</a></li></ul></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-sm text-gray-400">© 2026 ConcepTheory. All rights reserved.</div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const el = document.getElementById("current-datetime");
+      if (!el) return;
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat("zh-HK", { timeZone: "Asia/Hong_Kong", year: "numeric", month: "long", day: "numeric", weekday: "long", hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: false });
+      el.textContent = formatter.format(now);
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConcepTheory｜網站製作服務</title>
+  <meta name="description" content="ConcepTheory 提供高質網站製作服務，結合品牌定位、內容結構、轉化設計與數碼策略，為你建立真正幫到曝光同查詢嘅網站。" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans HK", sans-serif;
+      background: #0a0f1d; color: #f5f7fb;
+    }
+    .hero-bg {
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(6, 182, 212, 0.22), transparent 30%),
+        radial-gradient(circle at center, rgba(236, 72, 153, 0.12), transparent 35%),
+        linear-gradient(180deg, #0a0f1d 0%, #10182e 55%, #0a0f1d 100%);
+    }
+    .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(14px); border: 1px solid rgba(255,255,255,0.1); }
+    .glass-strong { background: rgba(255,255,255,0.08); backdrop-filter: blur(16px); border: 1px solid rgba(255,255,255,0.12); }
+    .gradient-text { background: linear-gradient(90deg, #8b5cf6, #06b6d4, #ec4899); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-line { border-top: 1px solid rgba(255,255,255,0.08); }
+    .glow { box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.35); }
+    .whatsapp-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; }
+  </style>
+</head>
+<body>
+  <a href="contact.html" class="whatsapp-float px-5 py-3 rounded-full bg-green-500 text-white font-semibold shadow-lg hover:bg-green-400 transition">WhatsApp 諮詢</a>
+
+  <div class="w-full border-b border-white/10 bg-black/20 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end text-xs md:text-sm text-gray-300">
+      <span class="text-cyan-300 mr-2">香港時間</span>
+      <span id="current-datetime">載入時間中...</span>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-black/20 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div>
+        <a href="index.html" class="text-xl md:text-2xl font-bold tracking-wide">ConcepTheory</a>
+        <div class="text-xs text-gray-400">Where strategy meets execution</div>
+      </div>
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+        <a href="index.html" class="hover:text-white">主頁</a>
+        <a href="website-design.html" class="text-white">網站製作</a>
+        <a href="seo.html" class="hover:text-white">SEO</a>
+        <a href="geo.html" class="hover:text-white">GEO</a>
+        <a href="google-maps.html" class="hover:text-white">Google Maps</a>
+        <a href="social-media.html" class="hover:text-white">社交媒體</a>
+        <a href="kol-collaboration.html" class="hover:text-white">KOL 合作</a>
+        <a href="join-us.html" class="hover:text-white">加入我哋</a>
+        <a href="blog_index.html" class="hover:text-white">Blog</a>
+        <a href="contact.html" class="hover:text-white">聯絡</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">立即諮詢</a>
+    </div>
+  </header>
+
+  <section class="hero-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-sm uppercase tracking-[0.3em] text-cyan-300 mb-4">Website Design • UX • Conversion • Branding</p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          唔止整個靚網站，
+          <span class="gradient-text">而係幫你建立有策略、有結構、有轉化能力嘅網站</span>
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          我哋做網站唔只係排版同美化，而係結合品牌定位、內容層次、SEO 結構、CTA 規劃同查詢路徑，
+          幫你做一個真正可以支援業務發展嘅網站。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">了解服務內容</a>
+          <a href="contact.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">查詢網站方案</a>
+        </div>
+      </div>
+      <div class="glass-strong rounded-3xl p-8 glow">
+        <div class="text-sm text-cyan-300 mb-4">網站不只外觀，更關乎結果</div>
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">品牌形象更完整</h3>
+            <p class="text-sm text-gray-300">令客戶第一眼已感受到專業度與可信性。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">內容架構更清晰</h3>
+            <p class="text-sm text-gray-300">將服務、優勢、案例與聯絡方法清楚呈現。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">可配合 SEO / GEO</h3>
+            <p class="text-sm text-gray-300">由網站底層開始支援之後嘅搜尋曝光策略。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">What We Build</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">適合唔同品牌階段嘅網站製作方案</h2>
+        <p class="text-gray-300 mt-6 text-lg leading-relaxed">
+          無論你係新品牌、已有業務、想重整形象，或者需要配合 SEO / 廣告 / 社媒推廣，
+          我哋都可以按目標設計網站架構。
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">品牌展示網站</h3>
+          <p class="text-gray-300">適合企業形象、服務介紹、個人品牌、顧問及工作室。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">服務導向網站</h3>
+          <p class="text-gray-300">重點強調查詢、報價、WhatsApp 聯絡與轉化路徑。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">內容與 SEO 網站</h3>
+          <p class="text-gray-300">支援文章、關鍵字布局、地區內容與長期曝光。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div class="glass-strong rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Our Process</p>
+        <h2 class="text-3xl font-bold mt-4">網站製作流程</h2>
+        <ul class="mt-6 space-y-4 text-gray-300">
+          <li>1. 了解品牌定位與業務目標</li>
+          <li>2. 建立頁面結構與內容方向</li>
+          <li>3. 設計視覺風格與轉化位置</li>
+          <li>4. 開發網站並進行手機版優化</li>
+          <li>5. 上線前測試與後續建議</li>
+        </ul>
+      </div>
+      <div class="glass rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Why ConcepTheory</p>
+        <h2 class="text-3xl font-bold mt-4">我哋做網站，會一齊諗曝光同業務</h2>
+        <p class="text-gray-300 mt-6 leading-relaxed">
+          好多網站只係完成「有個網站」；我哋會再向前一步，考慮內容點樣講得更易明、
+          點樣被搜尋、點樣令人有信心、點樣帶來查詢。呢個先係網站對業務真正嘅價值。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-strong rounded-3xl p-8 md:p-12 glow">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Call To Action</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4">想做一個更有質感同轉化力嘅網站？</h2>
+        <p class="text-gray-300 mt-5 text-lg max-w-3xl leading-relaxed">
+          如果你唔想只係做一個表面靚、但冇策略支援嘅網站，我哋可以幫你由品牌、結構、內容到轉化一齊規劃。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="contact.html" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">立即查詢</a>
+          <a href="seo.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">配合 SEO 了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold">ConcepTheory</h3>
+        <p class="text-gray-300 mt-4 leading-relaxed max-w-xl">
+          網站製作、SEO、GEO、Google Maps、社交媒體與 KOL 合作整合服務，幫你建立完整品牌曝光系統。
+        </p>
+      </div>
+      <div>
+        <div class="font-semibold mb-4">服務</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="website-design.html" class="hover:text-white">網站製作</a></li>
+          <li><a href="seo.html" class="hover:text-white">SEO</a></li>
+          <li><a href="geo.html" class="hover:text-white">GEO</a></li>
+          <li><a href="google-maps.html" class="hover:text-white">Google Maps</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-4">更多</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="social-media.html" class="hover:text-white">社交媒體</a></li>
+          <li><a href="kol-collaboration.html" class="hover:text-white">KOL 合作</a></li>
+          <li><a href="contact.html" class="hover:text-white">聯絡我哋</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-sm text-gray-400">
+      © 2026 ConcepTheory. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const el = document.getElementById("current-datetime");
+      if (!el) return;
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat("zh-HK", {
+        timeZone: "Asia/Hong_Kong",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        weekday: "long",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      });
+      el.textContent = formatter.format(now);
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>

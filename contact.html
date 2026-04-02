@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConcepTheory｜聯絡我哋</title>
+  <meta
+    name="description"
+    content="聯絡 ConcepTheory，查詢網站製作、SEO、GEO、Google Maps、社交媒體及 KOL 合作等服務。"
+  />
+  <meta property="og:title" content="ConcepTheory｜聯絡我哋" />
+  <meta
+    property="og:description"
+    content="如果你想了解網站製作、SEO、GEO、Google Maps、社交媒體或 KOL 合作方向，歡迎聯絡 ConcepTheory。"
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_HK" />
+  <meta name="theme-color" content="#0a0f1d" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans HK", sans-serif;
+      background: #0a0f1d;
+      color: #f5f7fb;
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(6, 182, 212, 0.22), transparent 30%),
+        radial-gradient(circle at center, rgba(236, 72, 153, 0.12), transparent 35%),
+        linear-gradient(180deg, #0a0f1d 0%, #10182e 55%, #0a0f1d 100%);
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .glass-strong {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #8b5cf6, #06b6d4, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-line {
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .glow {
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 60;
+    }
+
+    input, textarea, select {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #fff;
+      transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(255,255,255,0.45);
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: rgba(34,211,238,0.55);
+      background: rgba(255,255,255,0.07);
+      box-shadow: 0 0 0 4px rgba(34,211,238,0.08);
+    }
+  </style>
+</head>
+<body>
+  <a
+    href="#contact-form"
+    class="whatsapp-float px-5 py-3 rounded-full bg-green-500 text-white font-semibold shadow-lg hover:bg-green-400 transition"
+  >
+    WhatsApp 諮詢
+  </a>
+
+  <div class="w-full border-b border-white/10 bg-black/20 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end text-xs md:text-sm text-gray-300">
+      <span class="text-cyan-300 mr-2">香港時間</span>
+      <span id="current-datetime">載入時間中...</span>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-black/20 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div>
+        <a href="index.html" class="text-xl md:text-2xl font-bold tracking-wide">ConcepTheory</a>
+        <div class="text-xs text-gray-400">Where strategy meets execution</div>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+        <a href="index.html" class="hover:text-white">主頁</a>
+        <a href="website-design.html" class="hover:text-white">網站製作</a>
+        <a href="seo.html" class="hover:text-white">SEO</a>
+        <a href="geo.html" class="hover:text-white">GEO</a>
+        <a href="google-maps.html" class="hover:text-white">Google Maps</a>
+        <a href="social-media.html" class="hover:text-white">社交媒體</a>
+        <a href="kol-collaboration.html" class="hover:text-white">KOL 合作</a>
+        <a href="blog_index.html" class="hover:text-white">Blog</a>
+        <a href="contact.html" class="text-white">聯絡</a>
+      </nav>
+
+      <a href="#contact-form" class="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+        立即填表
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-sm uppercase tracking-[0.3em] text-cyan-300 mb-4">Contact • Discovery • Strategy</p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          想傾網站、搜尋、內容或品牌曝光？
+          <span class="gradient-text">歡迎聯絡 ConcepTheory</span>
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          如果你想了解網站製作、SEO、GEO、Google Maps、社交媒體或 KOL 合作方向，
+          可以先同我哋講你而家品牌狀況、想做嘅目標同大概需要，我哋會按你情況幫你整理較適合嘅方向。
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#contact-form" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            填寫查詢表
+          </a>
+          <a href="index.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">
+            返回主頁
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-300">
+          <div class="glass rounded-2xl p-4">
+            <div class="text-white font-semibold">網站 / Landing Page</div>
+            <div class="mt-2">適合想整理品牌門面與查詢流程</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-white font-semibold">SEO / GEO / Maps</div>
+            <div class="mt-2">適合想提升搜尋與本地曝光</div>
+          </div>
+          <div class="glass rounded-2xl p-4">
+            <div class="text-white font-semibold">社媒 / KOL</div>
+            <div class="mt-2">適合想建立內容節奏與品牌印象</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-strong rounded-3xl p-8 glow">
+        <div class="text-sm text-cyan-300 mb-4">What To Prepare</div>
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">你而家做緊咩業務？</h3>
+            <p class="text-sm text-gray-300">簡單講品牌背景、服務或產品方向。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">你最想改善邊方面？</h3>
+            <p class="text-sm text-gray-300">例如網站、搜尋曝光、社媒內容、本地流量等。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">有冇參考風格或目標？</h3>
+            <p class="text-sm text-gray-300">如果有網站、IG、品牌方向參考，可一併提供。</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">預計回覆節奏</h3>
+            <p class="text-sm text-gray-300">一般情況下，我哋會盡快跟進你嘅查詢內容。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-form" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div class="glass rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Contact Form</p>
+        <h2 class="text-3xl font-bold mt-4">留下資料</h2>
+        <p class="text-gray-300 mt-4 leading-relaxed">
+          你可以簡單講下品牌現況、想做嘅項目、遇到嘅問題或者希望達到嘅目標，
+          我哋會更容易幫你判斷合適方向。
+        </p>
+
+        <form class="mt-8 space-y-5">
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">姓名</label>
+            <input type="text" placeholder="你的姓名" class="w-full rounded-2xl px-4 py-3 outline-none" />
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">公司 / 品牌名稱</label>
+            <input type="text" placeholder="品牌或公司名稱" class="w-full rounded-2xl px-4 py-3 outline-none" />
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">電郵</label>
+              <input type="email" placeholder="name@email.com" class="w-full rounded-2xl px-4 py-3 outline-none" />
+            </div>
+            <div>
+              <label class="block text-sm text-gray-300 mb-2">聯絡電話 / WhatsApp</label>
+              <input type="text" placeholder="可選填" class="w-full rounded-2xl px-4 py-3 outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">想查詢服務</label>
+            <select class="w-full rounded-2xl px-4 py-3 outline-none">
+              <option>網站製作</option>
+              <option>SEO</option>
+              <option>GEO</option>
+              <option>Google Maps</option>
+              <option>社交媒體</option>
+              <option>KOL 合作</option>
+              <option>其他 / 綜合查詢</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">預算階段</label>
+            <select class="w-full rounded-2xl px-4 py-3 outline-none">
+              <option>先了解方向</option>
+              <option>HKD 5,000 以下</option>
+              <option>HKD 5,000 - 15,000</option>
+              <option>HKD 15,000 - 30,000</option>
+              <option>HKD 30,000 以上</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm text-gray-300 mb-2">查詢內容</label>
+            <textarea
+              rows="6"
+              placeholder="簡單講下你而家情況、想達到咩目標、預算範圍或參考方向"
+              class="w-full rounded-2xl px-4 py-3 outline-none"
+            ></textarea>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <button type="submit" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+              提交查詢
+            </button>
+            <span class="text-sm text-gray-400">提交前可先整理你想做嘅重點，方便更快跟進。</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="space-y-8">
+        <div class="glass-strong rounded-3xl p-8">
+          <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Let’s Talk</p>
+          <h2 class="text-3xl font-bold mt-4">你可以查詢嘅方向</h2>
+          <div class="mt-8 space-y-5 text-gray-300">
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="font-semibold text-white mb-1">網站製作</div>
+              <div>品牌網站、服務頁、內容結構、CTA 路徑與整體門面整理。</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="font-semibold text-white mb-1">SEO / GEO</div>
+              <div>搜尋曝光、內容布局、FAQ、地區內容與 AI 搜尋可見度。</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="font-semibold text-white mb-1">Google Maps</div>
+              <div>本地搜尋、商家資料、評論優化、地區流量與查詢入口。</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+              <div class="font-semibold text-white mb-1">社交媒體 / KOL</div>
+              <div>品牌內容節奏、合作策略、平台角色與整合曝光方向。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-8">
+          <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Before You Contact</p>
+          <h2 class="text-2xl font-bold mt-4">簡單準備以下資料會更好</h2>
+          <ul class="mt-6 space-y-3 text-gray-300">
+            <li>・你而家品牌或業務主要做咩</li>
+            <li>・你最想改善邊一部分</li>
+            <li>・有冇現有網站、IG、Google 商家頁或參考品牌</li>
+            <li>・想短期改善曝光，定中長線建立系統</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-strong rounded-3xl p-8 md:p-12 glow">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Call To Action</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4">
+          如果你想由網站、搜尋到內容曝光整理得更清楚，我哋可以先由對話開始。
+        </h2>
+        <p class="text-gray-300 mt-5 text-lg max-w-4xl leading-relaxed">
+          未必需要一開始就做晒全部項目，你可以先講你而家品牌最需要改善嘅部分，
+          我哋再幫你判斷適合由邊一步開始。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contact-form" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            立即填表查詢
+          </a>
+          <a href="blog_index.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">
+            睇更多觀點
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold">ConcepTheory</h3>
+        <p class="text-gray-300 mt-4 leading-relaxed max-w-xl">
+          想為品牌建立更完整數碼曝光系統，歡迎同我哋傾你目前需要。
+        </p>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">服務</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="website-design.html" class="hover:text-white">網站製作</a></li>
+          <li><a href="seo.html" class="hover:text-white">SEO</a></li>
+          <li><a href="geo.html" class="hover:text-white">GEO</a></li>
+          <li><a href="google-maps.html" class="hover:text-white">Google Maps</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">更多</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="social-media.html" class="hover:text-white">社交媒體</a></li>
+          <li><a href="kol-collaboration.html" class="hover:text-white">KOL 合作</a></li>
+          <li><a href="join-us.html" class="hover:text-white">加入我哋</a></li>
+          <li><a href="blog_index.html" class="hover:text-white">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-sm text-gray-400">
+      © 2026 ConcepTheory. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const el = document.getElementById("current-datetime");
+      if (!el) return;
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat("zh-HK", {
+        timeZone: "Asia/Hong_Kong",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        weekday: "long",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      });
+      el.textContent = formatter.format(now);
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>

@@ -1,155 +1,631 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-HK">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Concept Theory</title>
-  <meta name="description" content="Concept Theory presents collectible ambient objects, miniature architectural lights, transit-inspired desk pieces, and poetic display concepts." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>ConcepTheory｜網站製作・SEO・GEO・Google Maps・社交媒體・KOL 策略</title>
+  <meta
+    name="description"
+    content="ConcepTheory 為品牌提供網站製作、SEO、GEO、Google Maps、Instagram、小紅書、KOL 合作策劃等一站式數碼曝光方案。"
+  />
+  <meta property="og:title" content="ConcepTheory｜網站製作・SEO・GEO・Google Maps・社交媒體・KOL 策略" />
+  <meta property="og:description" content="幫你打造一套可被搵到、可被記住、可帶來查詢嘅品牌曝光系統。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="zh_HK" />
+  <meta name="theme-color" content="#0a0f1d" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans HK", sans-serif;
+      background: #0a0f1d;
+      color: #f5f7fb;
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(6, 182, 212, 0.22), transparent 30%),
+        radial-gradient(circle at center, rgba(236, 72, 153, 0.12), transparent 35%),
+        linear-gradient(180deg, #0a0f1d 0%, #10182e 55%, #0a0f1d 100%);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glass-strong {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #8b5cf6, #06b6d4, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-line {
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .glow {
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 60;
+    }
+
+    .mobile-menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+    }
+
+    .mobile-menu.open {
+      max-height: 600px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="index.html">CONCEPT THEORY</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-right">
-        <nav class="site-nav" id="siteNav">
-          <a href="index.html">Home</a>
-          <a href="concepts.html">Concepts</a>
-          <a href="about.html">About</a>
-          <a href="about.html#inquiry">Inquiry</a>
+  <!-- Floating WhatsApp -->
+  <a
+    href="contact.html"
+    class="whatsapp-float px-5 py-3 rounded-full bg-green-500 text-white font-semibold shadow-lg hover:bg-green-400 transition"
+  >
+    WhatsApp 諮詢
+  </a>
+
+  <!-- Top Date Time Bar -->
+  <div class="w-full border-b border-white/10 bg-black/20 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end text-xs md:text-sm text-gray-300">
+      <span class="text-cyan-300 mr-2">香港時間</span>
+      <span id="current-datetime">載入時間中...</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-black/20 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <div>
+          <a href="index.html" class="text-xl md:text-2xl font-bold tracking-wide">ConcepTheory</a>
+          <div class="text-xs text-gray-400">Where strategy meets execution</div>
+        </div>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+          <a href="#about" class="hover:text-white">關於我哋</a>
+          <a href="#services" class="hover:text-white">服務</a>
+          <a href="#cases" class="hover:text-white">案例</a>
+          <a href="#pricing" class="hover:text-white">方案</a>
+          <a href="#geo" class="hover:text-white">GEO / SEO</a>
+          <a href="#maps" class="hover:text-white">Google Maps</a>
+          <a href="#social" class="hover:text-white">社交媒體</a>
+          <a href="#kol" class="hover:text-white">KOL 合作</a>
+          <a href="join-us.html" class="hover:text-white">加入我哋</a>
+          <a href="#faq" class="hover:text-white">FAQ</a>
+          <a href="contact.html" class="hover:text-white">聯絡</a>
         </nav>
-        <div class="lang-switch">
-          <strong>EN</strong>
-          <a href="zh/index.html">中文</a>
+
+        <div class="flex items-center gap-3">
+          <a
+            href="contact.html"
+            class="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition"
+          >
+            立即諮詢
+          </a>
+
+          <button
+            id="mobile-menu-button"
+            class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-white/15 bg-white/5 text-white"
+            aria-label="Open Menu"
+            aria-expanded="false"
+            type="button"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu lg:hidden">
+        <div class="mt-4 glass rounded-2xl p-4 flex flex-col gap-3 text-sm text-gray-300">
+          <a href="#about" class="hover:text-white">關於我哋</a>
+          <a href="#services" class="hover:text-white">服務</a>
+          <a href="#cases" class="hover:text-white">案例</a>
+          <a href="#pricing" class="hover:text-white">方案</a>
+          <a href="#geo" class="hover:text-white">GEO / SEO</a>
+          <a href="#maps" class="hover:text-white">Google Maps</a>
+          <a href="#social" class="hover:text-white">社交媒體</a>
+          <a href="#kol" class="hover:text-white">KOL 合作</a>
+          <a href="join-us.html" class="hover:text-white">加入我哋</a>
+          <a href="#faq" class="hover:text-white">FAQ</a>
+          <a href="blog_index.html" class="hover:text-white">Blog</a>
+          <a href="contact.html" class="hover:text-white">聯絡</a>
+          <a href="contact.html" class="mt-2 inline-flex justify-center px-5 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            立即諮詢
+          </a>
         </div>
       </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Collectible Ambient Objects</p>
-          <h1>Miniature worlds, luminous rituals, and quiet emotional design.</h1>
-          <p class="lead">
-            Concept Theory develops original desk objects and miniature display pieces that translate stations,
-            windows, signs, shelters, status indicators, and interior fragments into collectible ambient companions.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="concepts.html">View Concepts</a>
-            <a class="btn btn-secondary" href="about.html">Read About</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <img src="images/lantern-window.png" alt="Lantern Window by Concept Theory" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Featured Collection</p>
-            <h2>Objects that feel like portals, markers, and remembered places.</h2>
-          </div>
-          <a class="text-link" href="concepts.html">See all concepts</a>
-        </div>
-        <div class="card-grid">
-          <article class="project-card">
-            <img src="images/lantern-window.png" alt="Lantern Window" />
-            <div class="project-body">
-              <div class="project-meta">Fantasy Window Lamp</div>
-              <h3>Lantern Window</h3>
-              <p>A miniature luminous window conceived as a threshold into an unseen interior world.</p>
-              <a class="text-link" href="lantern-window.html">Open project</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="images/waypost-no7.png" alt="Waypost No.7" />
-            <div class="project-body">
-              <div class="project-meta">Village Wayfinding Object</div>
-              <h3>Waypost No.7</h3>
-              <p>A storybook transit marker that blends lantern warmth, village calm, and collectible detail.</p>
-              <a class="text-link" href="waypost-no7.html">Open project</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="images/airport-display.png" alt="Airport Display" />
-            <div class="project-body">
-              <div class="project-meta">Airport Information Display Object</div>
-              <h3>Airport Display</h3>
-              <p>A refined desktop display inspired by airport gate signage, travel anticipation, and calm information design.</p>
-              <a class="text-link" href="airport-display.html">Open project</a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Design Direction</p>
-            <h2>Three qualities that define the collection</h2>
-          </div>
-        </div>
-        <div class="info-grid">
-          <div class="info-card">
-            <h3>Emotional Utility</h3>
-            <p>These objects frame time, mood, status, transit memory, or imagined places in ways that gently support daily life.</p>
-          </div>
-          <div class="info-card">
-            <h3>Miniature Architecture</h3>
-            <p>Windows, shelters, station signs, and small public structures are reinterpreted as desk-scale collectible forms.</p>
-          </div>
-          <div class="info-card">
-            <h3>Cinematic Warmth</h3>
-            <p>Warm light, restrained materials, and atmospheric composition give each piece a calm, restorative quality.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow">About the Studio</p>
-          <h2>Between magical realism, urban memory, and tabletop ritual.</h2>
-          <p class="lead">
-            Concept Theory explores how everyday objects can hold narrative, softness, and spatial imagination.
-            The work draws from storybook architecture, Japanese signage, miniature transit systems, and intimate domestic light.
-          </p>
-          <div class="section-actions">
-            <a class="btn btn-primary" href="about.html">More About</a>
-            <a class="btn btn-secondary" href="about.html#inquiry">Make an Inquiry</a>
-          </div>
-        </div>
-        <img class="about-image" src="images/japan-hot-spa.png" alt="Japan Hot Spa by Concept Theory" />
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-wrap">
+  <!-- Hero -->
+  <section class="hero-bg overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 py-24 md:py-32 grid md:grid-cols-2 gap-12 items-center">
       <div>
-        <strong>Concept Theory</strong>
-        <p class="small">Original collectible ambient objects, miniature display concepts, and desk-scale emotional design pieces.</p>
+        <p class="text-sm uppercase tracking-[0.3em] text-cyan-300 mb-4">
+          Digital Growth • Strategy • Content • KOL • Maps
+        </p>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+          幫你打造一套
+          <span class="gradient-text">可被搵到、可被記住、可帶來查詢</span>
+          嘅品牌曝光系統
+        </h1>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          ConcepTheory 結合網站製作、SEO、GEO、Google Maps、Instagram、小紅書、
+          內容策劃同 KOL 合作，為品牌建立更完整、更有策略、更加容易轉化嘅數碼宣傳方案。
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#services" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            立即了解服務
+          </a>
+          <a href="#pricing" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">
+            查看收費方案
+          </a>
+        </div>
+
+        <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-300">
+          <div>
+            <div class="text-2xl font-bold text-white">Web</div>
+            <div>網站製作</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">SEO / GEO</div>
+            <div>搜尋曝光</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">Maps</div>
+            <div>本地流量入口</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">KOL</div>
+            <div>策略合作推廣</div>
+          </div>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="concepts.html">Concepts</a>
-        <a href="about.html">About</a>
-        <a href="about.html#inquiry">Inquiry</a>
-        <a href="zh/index.html">中文</a>
+
+      <div class="glass-strong rounded-3xl p-8 glow">
+        <div class="text-sm text-cyan-300 mb-4">Why brands choose us</div>
+        <div class="space-y-4">
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">真人團隊度橋</h3>
+            <p class="text-sm text-gray-300">
+              我哋唔止做執行，更會幫你構思適合品牌嘅推廣方向與內容打法。
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">整合網站、搜尋、地圖、社媒</h3>
+            <p class="text-sm text-gray-300">
+              唔使逐樣搵人配合，由我哋協助建立一套更完整嘅曝光系統。
+            </p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/5 border border-white/10">
+            <h3 class="font-semibold mb-1">可安排 KOL / 人物合作</h3>
+            <p class="text-sm text-gray-300">
+              為品牌打造更有故事性、辨識度同記憶點嘅宣傳策略。
+            </p>
+          </div>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="py-8 border-y border-white/10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-6 text-sm text-gray-300">
+      <div class="glass rounded-2xl p-5">適合中小企、本地商戶、個人品牌</div>
+      <div class="glass rounded-2xl p-5">網站 + SEO + GEO + Maps + Social 一站式整合</div>
+      <div class="glass rounded-2xl p-5">真人策劃，不止制式化執行</div>
+      <div class="glass rounded-2xl p-5">支援 KOL 合作與創作人網絡配對</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-4xl mx-auto">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">About ConcepTheory</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4 leading-tight">
+          我哋唔係單純幫你做一個網站，
+          <br class="hidden md:block" />
+          而係幫你建立一個完整數碼曝光佈局
+        </h2>
+        <p class="text-gray-300 mt-6 leading-relaxed text-lg">
+          好多公司有網站，但網站唔等於曝光，更唔等於有查詢。
+          ConcepTheory 會由真人團隊出發，按你品牌定位、目標客群同商業方向，
+          結合網站、搜尋、地圖、社交媒體同 KOL 合作，幫你建立更完整嘅品牌增長路線。
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-4 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-lg font-semibold">品牌定位整理</h3>
+          <p class="text-gray-300 mt-3 text-sm">了解你品牌想點被睇見，先再決定網站、內容同曝光方式。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-lg font-semibold">網站與內容架構</h3>
+          <p class="text-gray-300 mt-3 text-sm">令訪客更容易理解你做緊咩、點解值得搵你。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-lg font-semibold">搜尋與本地曝光</h3>
+          <p class="text-gray-300 mt-3 text-sm">配合 SEO、GEO 同 Google Maps 去加強被發現機會。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-lg font-semibold">社媒與合作記憶點</h3>
+          <p class="text-gray-300 mt-3 text-sm">透過內容與人物合作，建立更鮮明品牌印象。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Services</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">我哋提供嘅服務方向</h2>
+        <p class="text-gray-300 mt-6 text-lg leading-relaxed">
+          由品牌門面到搜尋曝光、由本地流量到內容合作，我哋會按你品牌實際需要組合合適方案。
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <a href="website-design.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">網站製作</h3>
+          <p class="text-gray-300">建立品牌網站、服務頁、內容結構與查詢路徑。</p>
+        </a>
+        <a href="seo.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">SEO</h3>
+          <p class="text-gray-300">改善自然搜尋曝光，建立更長線可累積流量資產。</p>
+        </a>
+        <a href="geo.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">GEO</h3>
+          <p class="text-gray-300">因應 AI 搜尋與生成式答案時代，優化品牌內容可見度。</p>
+        </a>
+        <a href="google-maps.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">Google Maps</h3>
+          <p class="text-gray-300">提升地圖搜尋、本地查詢入口與商家頁面完整度。</p>
+        </a>
+        <a href="social-media.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">社交媒體</h3>
+          <p class="text-gray-300">規劃 Instagram、小紅書及品牌內容節奏與風格。</p>
+        </a>
+        <a href="kol-collaboration.html" class="glass rounded-2xl p-6 hover:bg-white/10 transition block">
+          <h3 class="text-xl font-semibold mb-3">KOL 合作</h3>
+          <p class="text-gray-300">設計更有故事性與記憶點嘅合作策略與內容方向。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases -->
+  <section id="cases" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Use Cases</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">常見合作情境</h2>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">新品牌起步</h3>
+          <p class="text-gray-300">由網站、品牌語氣、內容方向開始建立基礎門面。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">已有業務但曝光不足</h3>
+          <p class="text-gray-300">重新整理網站、搜尋內容、本地曝光與 CTA 結構。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-semibold mb-3">想提升品牌感</h3>
+          <p class="text-gray-300">透過社媒內容、KOL 合作與視覺一致性建立更深印象。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Plans</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">按品牌階段組合方案</h2>
+        <p class="text-gray-300 mt-6 text-lg">可先由單一項目開始，再逐步延伸至更完整曝光系統。</p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-6">
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Starter</h3>
+          <p class="text-gray-300 mt-4">適合初步建立網上門面與基本內容架構。</p>
+          <ul class="mt-6 space-y-3 text-gray-300 text-sm">
+            <li>・基礎網站頁面</li>
+            <li>・品牌內容整理</li>
+            <li>・CTA 路徑設計</li>
+          </ul>
+        </div>
+        <div class="glass-strong rounded-3xl p-8 glow">
+          <h3 class="text-2xl font-bold">Growth</h3>
+          <p class="text-gray-300 mt-4">適合希望加強搜尋曝光與本地查詢嘅品牌。</p>
+          <ul class="mt-6 space-y-3 text-gray-300 text-sm">
+            <li>・網站 + SEO / GEO 規劃</li>
+            <li>・Google Maps 方向</li>
+            <li>・內容策略整理</li>
+          </ul>
+        </div>
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-2xl font-bold">Brand Impact</h3>
+          <p class="text-gray-300 mt-4">適合希望整合社媒與合作資源提升品牌印象。</p>
+          <ul class="mt-6 space-y-3 text-gray-300 text-sm">
+            <li>・社交媒體內容</li>
+            <li>・KOL 合作策略</li>
+            <li>・整合曝光建議</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GEO / SEO -->
+  <section id="geo" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div class="glass rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Search Visibility</p>
+        <h2 class="text-3xl font-bold mt-4">SEO + GEO：由搜尋到 AI 搜尋時代</h2>
+        <p class="text-gray-300 mt-6 leading-relaxed">
+          我哋會將網站內容、服務頁、FAQ、地區頁同品牌訊息整理得更清楚，
+          令品牌更容易被搜尋系統理解，亦更適應新一代生成式搜尋環境。
+        </p>
+        <div class="mt-8 flex gap-4 flex-wrap">
+          <a href="seo.html" class="px-5 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">了解 SEO</a>
+          <a href="geo.html" class="px-5 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">了解 GEO</a>
+        </div>
+      </div>
+
+      <div class="glass-strong rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Why It Matters</p>
+        <h2 class="text-3xl font-bold mt-4">唔止被搵到，仲要被理解</h2>
+        <p class="text-gray-300 mt-6 leading-relaxed">
+          今日搜尋已唔只係關鍵字比賽，而係資訊是否清晰、可信、結構完整。
+          呢個亦正正係網站、內容、品牌語氣同搜尋策略需要一齊處理嘅原因。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Maps -->
+  <section id="maps" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-strong rounded-3xl p-8 md:p-12 glow">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Local Search</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4">Google Maps 係好多本地商戶最接近查詢嘅入口</h2>
+        <p class="text-gray-300 mt-5 text-lg max-w-4xl leading-relaxed">
+          無論你係地區商戶、服務中心、工作室、診所、零售或餐飲，
+          Maps 上嘅資料完整度、評論、地區訊號與網站內容配合，都會直接影響客戶點樣搵到你。
+        </p>
+        <div class="mt-8">
+          <a href="google-maps.html" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            了解 Google Maps 優化
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social -->
+  <section id="social" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
+      <div class="glass rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Social Content</p>
+        <h2 class="text-3xl font-bold mt-4">社交媒體唔應該只係「有更新」</h2>
+        <p class="text-gray-300 mt-6 leading-relaxed">
+          我哋會按品牌定位整理內容方向、語氣、欄目同平台角色，令 Instagram、小紅書等內容更一致、更有累積性。
+        </p>
+        <div class="mt-8">
+          <a href="social-media.html" class="px-5 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">了解社交媒體策略</a>
+        </div>
+      </div>
+
+      <div class="glass rounded-3xl p-8">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Content Direction</p>
+        <h2 class="text-3xl font-bold mt-4">品牌內容應該幫你被記住</h2>
+        <p class="text-gray-300 mt-6 leading-relaxed">
+          內容唔止係曝光工具，亦係建立專業感、生活感、風格感同受眾記憶點嘅方式。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOL -->
+  <section id="kol" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="max-w-4xl">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">KOL Collaboration</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">合作唔止為曝光，而係為品牌印象加深</h2>
+        <p class="text-gray-300 mt-6 text-lg leading-relaxed">
+          我哋重視合作對象與品牌定位是否匹配，亦重視內容角度、故事性同可延伸性，
+          令合作唔止係一次出 post，而係成為品牌敘事一部分。
+        </p>
+        <div class="mt-8">
+          <a href="kol-collaboration.html" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            了解 KOL 合作策略
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section id="join" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass rounded-3xl p-8 md:p-12">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Join Us</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4">如果你鍾意品牌、內容、創作同策略</h2>
+        <p class="text-gray-300 mt-5 text-lg max-w-3xl leading-relaxed">
+          ConcepTheory 歡迎對網站、內容、社媒、合作企劃與品牌增長有興趣嘅人了解我哋。
+        </p>
+        <div class="mt-8">
+          <a href="join-us.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">
+            查看加入我哋
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-3xl mx-auto">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">FAQ</p>
+        <h2 class="text-3xl md:text-5xl font-bold mt-4">常見問題</h2>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 gap-6">
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">你哋係做網站，定做 marketing？</h3>
+          <p class="text-gray-300 mt-3">我哋唔只做單一項目，而係由網站、搜尋、本地曝光、內容與合作方向整合思考。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">一定要一次過做晒全部服務？</h3>
+          <p class="text-gray-300 mt-3">唔需要。可以先由網站、SEO、Google Maps 或社媒其中一項開始，再逐步延伸。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">適合咩類型品牌？</h3>
+          <p class="text-gray-300 mt-3">中小企、本地商戶、工作室、個人品牌、服務業同希望建立更完整曝光系統嘅品牌都適合。</p>
+        </div>
+        <div class="glass rounded-2xl p-6">
+          <h3 class="font-semibold text-lg">可唔可以先傾方向？</h3>
+          <p class="text-gray-300 mt-3">可以，你可以先聯絡我哋講你而家品牌狀況，我哋再建議適合起步方向。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section-line py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="glass-strong rounded-3xl p-8 md:p-12 glow">
+        <p class="text-cyan-300 text-sm uppercase tracking-[0.25em]">Call To Action</p>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4">
+          想令你品牌唔止有存在感，而係有系統咁被搵到、被記住、被查詢？
+        </h2>
+        <p class="text-gray-300 mt-5 text-lg max-w-4xl leading-relaxed">
+          我哋可以按你品牌現況，幫你由網站、搜尋、地圖、社媒同合作內容逐步整理出更完整方向。
+        </p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="contact.html" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+            立即查詢
+          </a>
+          <a href="blog_index.html" class="px-6 py-3 rounded-full border border-white/20 text-white hover:bg-white/10 transition">
+            睇更多觀點
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer -->
+  <footer class="section-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold">ConcepTheory</h3>
+        <p class="text-gray-300 mt-4 leading-relaxed max-w-xl">
+          我哋為品牌提供網站製作、SEO、GEO、Google Maps、社交媒體、內容策劃及 KOL 合作等整合服務，
+          幫助你建立更完整嘅數碼曝光系統。
+        </p>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">服務</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="website-design.html" class="hover:text-white">網站製作</a></li>
+          <li><a href="seo.html" class="hover:text-white">SEO</a></li>
+          <li><a href="geo.html" class="hover:text-white">GEO</a></li>
+          <li><a href="google-maps.html" class="hover:text-white">Google Maps</a></li>
+          <li><a href="social-media.html" class="hover:text-white">社交媒體</a></li>
+          <li><a href="kol-collaboration.html" class="hover:text-white">KOL 合作</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">更多</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="join-us.html" class="hover:text-white">加入我哋</a></li>
+          <li><a href="blog_index.html" class="hover:text-white">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-white">聯絡我哋</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-sm text-gray-400">
+      © 2026 ConcepTheory. All rights reserved.
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script -->
+  <script>
+    function updateDateTime() {
+      const el = document.getElementById("current-datetime");
+      if (!el) return;
+
+      const now = new Date();
+
+      const formatter = new Intl.DateTimeFormat("zh-HK", {
+        timeZone: "Asia/Hong_Kong",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        weekday: "long",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      });
+
+      el.textContent = formatter.format(now);
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    const menuButton = document.getElementById("mobile-menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuButton.addEventListener("click", function () {
+      mobileMenu.classList.toggle("open");
+      const expanded = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", (!expanded).toString());
+      menuButton.textContent = expanded ? "☰" : "✕";
+    });
+
+    const mobileLinks = mobileMenu.querySelectorAll("a");
+    mobileLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.textContent = "☰";
+      });
+    });
+  </script>
 </body>
 </html>

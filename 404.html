@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>找不到頁面 | ConcepTheory</title>
+  <meta name="description" content="你所尋找的頁面不存在，請返回 ConcepTheory 首頁或聯絡我哋。" />
+  <meta name="robots" content="noindex, follow" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans HK", sans-serif;
+      background: #0a0f1d;
+      color: #f5f7fb;
+    }
+    .hero-bg {
+      background:
+        radial-gradient(circle at top left, rgba(139, 92, 246, 0.35), transparent 35%),
+        radial-gradient(circle at top right, rgba(6, 182, 212, 0.22), transparent 30%),
+        radial-gradient(circle at center, rgba(236, 72, 153, 0.12), transparent 35%),
+        linear-gradient(180deg, #0a0f1d 0%, #10182e 55%, #0a0f1d 100%);
+    }
+    .glass {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .glass-strong {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #8b5cf6, #06b6d4, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .section-line { border-top: 1px solid rgba(255,255,255,0.08); }
+    .glow { box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 20px 60px rgba(0,0,0,0.35); }
+    .whatsapp-float { position: fixed; right: 20px; bottom: 20px; z-index: 60; }
+  </style>
+</head>
+<body>
+  <a href="contact.html" class="whatsapp-float px-5 py-3 rounded-full bg-green-500 text-white font-semibold shadow-lg hover:bg-green-400 transition">
+    WhatsApp 諮詢
+  </a>
+
+  <div class="w-full border-b border-white/10 bg-black/20 backdrop-blur">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-end text-xs md:text-sm text-gray-300">
+      <span class="text-cyan-300 mr-2">香港時間</span>
+      <span id="current-datetime">載入時間中...</span>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-50 bg-black/20 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div>
+        <a href="index.html" class="text-xl md:text-2xl font-bold tracking-wide">ConcepTheory</a>
+        <div class="text-xs text-gray-400">Where strategy meets execution</div>
+      </div>
+      <nav class="hidden lg:flex items-center gap-6 text-sm text-gray-300">
+        <a href="index.html" class="hover:text-white">主頁</a>
+        <a href="blog_index.html" class="hover:text-white">Blog</a>
+        <a href="contact.html" class="hover:text-white">聯絡</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex px-5 py-2.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+        立即諮詢
+      </a>
+    </div>
+  </header>
+
+  <main class="hero-bg min-h-[72vh] flex items-center">
+    <section class="max-w-7xl mx-auto px-6 py-20 w-full">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="inline-flex items-center px-4 py-2 rounded-full glass text-sm text-cyan-300 uppercase tracking-[0.25em] mb-6">
+          404 Error
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+          呢一頁 <span class="gradient-text">搵唔到</span>
+        </h1>
+
+        <p class="mt-6 text-lg text-gray-300 leading-relaxed">
+          你所尋找嘅頁面可能已被移動、刪除，或者連結有誤。
+          你可以返回首頁、瀏覽我哋嘅 Blog，或者直接聯絡我哋。
+        </p>
+
+        <div class="mt-10 glass-strong glow rounded-3xl p-8 md:p-10">
+          <div class="grid md:grid-cols-3 gap-4 text-left">
+            <a href="index.html" class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+              <div class="text-cyan-300 text-sm uppercase tracking-[0.2em]">Home</div>
+              <div class="mt-2 text-xl font-semibold">返回首頁</div>
+              <p class="mt-2 text-sm text-gray-300">查看 ConcepTheory 主要服務與品牌定位。</p>
+            </a>
+
+            <a href="blog_index.html" class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+              <div class="text-cyan-300 text-sm uppercase tracking-[0.2em]">Blog</div>
+              <div class="mt-2 text-xl font-semibold">瀏覽文章</div>
+              <p class="mt-2 text-sm text-gray-300">閱讀 SEO、GEO、網站與品牌曝光相關觀點。</p>
+            </a>
+
+            <a href="contact.html" class="glass rounded-2xl p-5 hover:bg-white/10 transition">
+              <div class="text-cyan-300 text-sm uppercase tracking-[0.2em]">Contact</div>
+              <div class="mt-2 text-xl font-semibold">聯絡我哋</div>
+              <p class="mt-2 text-sm text-gray-300">如你想查詢合作或服務，歡迎直接搵我哋。</p>
+            </a>
+          </div>
+
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="index.html" class="px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition">
+              返回首頁
+            </a>
+            <a href="contact.html" class="px-6 py-3 rounded-full border border-white/15 text-white hover:bg-white/5 transition">
+              聯絡我們
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section-line py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <h3 class="text-2xl font-bold">ConcepTheory</h3>
+        <p class="text-gray-300 mt-4 leading-relaxed max-w-xl">
+          我哋提供網站製作、SEO、GEO、Google Maps、社交媒體與品牌曝光相關服務，
+          幫助品牌建立更完整嘅數碼增長系統。
+        </p>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">快速連結</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="index.html" class="hover:text-white">主頁</a></li>
+          <li><a href="blog_index.html" class="hover:text-white">Blog</a></li>
+          <li><a href="contact.html" class="hover:text-white">聯絡我哋</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="font-semibold mb-4">服務</div>
+        <ul class="space-y-2 text-gray-300 text-sm">
+          <li><a href="website-design.html" class="hover:text-white">網站製作</a></li>
+          <li><a href="seo.html" class="hover:text-white">SEO</a></li>
+          <li><a href="geo.html" class="hover:text-white">GEO</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 mt-10 pt-6 border-t border-white/10 text-sm text-gray-400">
+      © 2026 ConcepTheory. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    function updateDateTime() {
+      const el = document.getElementById("current-datetime");
+      if (!el) return;
+
+      const now = new Date();
+      const formatter = new Intl.DateTimeFormat("zh-HK", {
+        timeZone: "Asia/Hong_Kong",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        weekday: "long",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: false
+      });
+
+      el.textContent = formatter.format(now);
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+</body>
+</html>
